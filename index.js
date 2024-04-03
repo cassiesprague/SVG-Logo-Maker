@@ -3,7 +3,8 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const generateSvg = require("./utils/generateSvg")
 
-//Below is my array of questions for the user about the shape and colors they would like
+//Below is my array of questions for the user about the shape and colors they would like inside of the function to create the logo after questions have been answered
+function 
 inquirer.prompt([
     {
         type: "input",
@@ -28,10 +29,9 @@ inquirer.prompt([
     },
 ])
 
-//Below is the function to generate the SVG file
-
 
 //to do: create function to inialize app
 
 
 //to do: call the function to initalize
+init();
