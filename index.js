@@ -28,7 +28,7 @@ inquirer.prompt([
     },
 ])
 
-//to do: create a function to make the svg file
+//Below is the function to generate the SVG file
 
 
 //to do: create function to inialize app
