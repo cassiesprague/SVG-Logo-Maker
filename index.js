@@ -49,42 +49,6 @@ const questions = [
 ];
 
 //to do: create function to inialize app
-function writeToFile(fileName, data) {
-    filesystem.writeFile(fileName, data, function (err) {
-        if (err) {
-            return console.log(err);
-        }
-        console.log("SVG Logo Generated!");
-    });
-}
-
-async function init() {
-    var svgString = "";
-	var svg_file = "logo.svg";
-
-    const answers = await inquirer.prompt(questions);
-
-    var user_text = "";
-	if (answers.text.length > 0 && answers.text.length < 4) {
-		user_text = answers.text;
-	} else {
-		console.log("Please enter 1-3 characters");
-        return;
-	}
-    user_textColor = answers.textColor;
-    user_shape = answers.shape;
-    user_shapeColor = answers.shapeColor;
-
-    let user_shape;
-    if (user_shape_type === "Circle" || user_shape_type === "circle") {
-		user_shape = new Circle();
-	}
-    else if (user_shape_type === "Triangle" || user_shape_type === "triangle") {
-		user_shape = new Triangle();
-	}
-	else (user_shape_type === "Square" || user_shape_type === "square")
-		user_shape = new Square();
-}
 
 
 //to do: call the function to initalize
