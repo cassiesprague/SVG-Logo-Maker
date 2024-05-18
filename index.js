@@ -3,7 +3,7 @@
 //Below are all the consts necessary for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
-const {Circle, Square, Triangle} = require("./lib/shapes");
+const generateLogo = require("./utils/generateLogo");
 
 //Below conducts the svg class which renders the methods for setting shape and text
 class Svg{
@@ -49,7 +49,22 @@ const questions = [
 ];
 
 //to do: create function to inialize app
-
+function toWriteFile(fileName, data) {
+    var content = generateLogo(data);
+    fs.toWriteFile(fileName, content, function(error) {
+        if (error) {
+            console.log(error);
+        }
+        console.log("Generated logo.svg");
+    })
+}
 
 //to do: call the function to initalize
-init()
+function init() {
+    inquirer.createPromptModule(questions).then(function (data){
+        var fileName = 'logo.svg';
+        writeToFile(fileName, data);
+    });
+}
+
+init();
