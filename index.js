@@ -1,4 +1,5 @@
 //Used the following link to help with making this application
+// https://www.youtube.com/watch?v=zh9CsKqEhOM
 //https://www.google.com/search?sca_esv=c0e14f80e7366f47&sca_upv=1&sxsrf=ACQVn0-rkeJimByVFhc3aBy2_f0aZxTYRQ:1712165948168&q=how+to+make+a+svg+logo+maker&tbm=vid&source=lnms&prmd=visnbmtz&sa=X&ved=2ahUKEwigjIyZy6aFAxXag4kEHTtVDIYQ0pQJegQICxAB&biw=934&bih=565&dpr=1.5#fpstate=ive&vld=cid:7d5aee99,vid:GJYMcLus3v0,st:0
 //Below are all the consts necessary for this application
 const fs = require("fs");
